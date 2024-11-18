@@ -13,7 +13,7 @@ using Microsoft.UI.Xaml.Controls.Primitives;
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace App11
+namespace winpen
 {
     /// <summary>
     /// An empty window that can be used on its own or navigated to within a Frame.
@@ -102,7 +102,7 @@ namespace App11
         {
             try
             {
-                using (StreamWriter sw = new StreamWriter("C:/WinUI/App11/my.txt"))
+                using (StreamWriter sw = new StreamWriter("C:/WinUI/winpen/my.txt"))
                 {
                     sw.WriteLine(vx.Count);
                     for (int i = 0; i < vx.Count; i++)
@@ -122,7 +122,7 @@ namespace App11
         {
             try
             {
-                using (StreamReader sr = new StreamReader("C:/WinUI/App11/my.txt"))
+                using (StreamReader sr = new StreamReader("C:/WinUI/winpen/my.txt"))
                 {
                     vx.Clear();
                     vy.Clear();
@@ -178,7 +178,7 @@ namespace App11
             // Save
             try
             {
-                using (StreamWriter sw = new StreamWriter("C:/WinUI/App11/1.txt"))
+                using (StreamWriter sw = new StreamWriter("C:/WinUI/winpen/1.txt"))
                 {
                     for (int i = 0; i < vx.Count; i++)
                     {
@@ -197,7 +197,7 @@ namespace App11
             // Load
             try
             {
-                using (StreamReader sr = new StreamReader("C:/WinUI/App11/1.txt"))
+                using (StreamReader sr = new StreamReader("C:/WinUI/winpen/1.txt"))
                 {
                     vx.Clear();
                     vy.Clear();
